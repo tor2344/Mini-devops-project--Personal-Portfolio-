@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang='th'>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Combined Portfolio | Tee & Tor</title>
+<style>
+:root{
+  --red: #ff4d6d;
+  --purple: #7b2cbf;
+  --pink: #ff85a1;
+  --bg: #0b0014;
+  --bg-2: #140022;
+  --text: #f8f7ff;
+  --muted: #d9d4e7;
+  --card: rgba(255,255,255,0.05);
+  --chip: rgba(123,44,191,0.35);
+  --shadow: 0 15px 35px rgba(0,0,0,.35);
+  --radius: 22px;
+}
+
+/* Reset */
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%}
+body{
+  font-family: Poppins, "Noto Sans Thai", sans-serif;
+  color:var(--text);
+  background:
+    radial-gradient(1000px 600px at 10% -20%, rgba(123,44,191,.3), transparent 60%),
+    radial-gradient(900px 600px at 100% 10%, rgba(255,77,109,.2), transparent 60%),
+    linear-gradient(180deg, #0d0018 0%, #080010 100%);
+}
+
+/* Container */
+.container,.wrap{max-width:1100px;margin:0 auto;padding:24px}
+
+/* Header / Hero */
+header, .hero{
+  background: linear-gradient(135deg, rgba(123,44,191,.35), rgba(255,77,109,.35));
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(8px);
+  border:1px solid rgba(255,255,255,0.12);
+  padding:20px;
+  margin-bottom:24px;
+}
+header{display:flex;align-items:center;gap:20px;flex-wrap:wrap}
+header nav{margin-left:auto;display:flex;gap:10px;flex-wrap:wrap}
+header nav a{
+  text-decoration:none;color:var(--text);
+  background:var(--chip);
+  padding:8px 14px;border-radius:14px;font-weight:600
+}
+header nav a:hover{background:rgba(255,133,161,.3)}
+
+.avatar{
+  width:80px;height:80px;border-radius:50%;
+  overflow:hidden;display:grid;place-items:center;
+  background:var(--chip);
+  border:2px solid rgba(255,255,255,.15)
+}
+.avatar img{width:100%;height:100%;object-fit:cover}
+
+/* Titles */
+.title{font-size:clamp(22px,3vw,36px);font-weight:700}
+.subtitle{opacity:.9;margin-top:4px}
+
+/* Cards */
+.card{
+  background: var(--card);
+  border:1px solid rgba(255,255,255,0.12);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding:22px;
+}
+.card h2{margin:0 0 10px;font-size:1.25rem}
+
+/* Buttons */
+.btn{
+  border:0;cursor:pointer;padding:10px 16px;border-radius:16px;
+  font-weight:600;
+  background: linear-gradient(90deg, var(--purple), var(--pink));
+  color:#fff;
+  box-shadow:0 8px 18px rgba(0,0,0,.4);
+  transition: transform .15s ease;
+  text-decoration:none;display:inline-block
+}
+.btn.secondary{
+  background:transparent;border:2px solid var(--pink);color:var(--pink)
+}
+.btn:hover{transform:translateY(-2px)}
+
+/* Chips */
+.chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:8px}
+.chip{
+  background:linear-gradient(90deg, var(--purple), var(--pink));
+  color:#fff;
+  border-radius:999px;
+  padding:8px 12px;font-weight:600;font-size:.9rem
+}
+
+/* Info Grid */
+.grid{display:grid;gap:20px}
+@media(min-width:860px){.grid{grid-template-columns:repeat(12,1fr)}}
+.card.span-12{grid-column:span 12}
+.card.span-8{grid-column:span 8}
+.card.span-6{grid-column:span 6}
+.card.span-4{grid-column:span 4}
+
+/* Gallery */
+.gallery{
+  display:grid;
+  grid-template-columns:repeat(auto-fill,minmax(220px,1fr));
+  gap:14px;margin-top:12px
+}
+.gallery .pic{background:var(--card);border:1px solid rgba(255,255,255,.12);border-radius:14px;overflow:hidden}
+.gallery img{width:100%;height:180px;object-fit:cover;display:block}
+.caption{padding:10px;font-size:.95rem;text-align:center}
+
+/* Contact */
+.contact{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
+
+/* Footer */
+footer{margin:32px 0 12px;text-align:center;color:var(--muted);font-size:.9rem}
+</style>
+</head>
+<body>
+
+<!-- Portfolio Tee -->
+<div class="portfolio" id="tee">
+  <h1 style="text-align:center;margin:30px 0">Portfolio: Darunphob Lonapalawong (ตี๋)</h1>
+  <div class="container">
+    <header>
+      <div class="avatar"><img src="mepromsx.jpg" alt="โปรไฟล์" /></div>
+      <div>
+        <h1 class="title">Darunphob Lonapalawong</h1>
+        <p class="subtitle">Personal Portfolio – หน้าประวัติส่วนตัว</p>
+      </div>
+      <nav>
+        <a href="#about">ประวัติ</a>
+        <a href="#interests">ความสนใจ</a>
+        <a href="#contact">ติดต่อ</a>
+      </nav>
+    </header>
+
+    <div class="hero card">
+      <div>
+        <div class="id">รหัสนักศึกษา: <strong>67319010041</strong></div>
+        <h2 class="title">สวัสดีเราตี๋เอง😜</h2>
+        <p class="subtitle">“ข้อความที่สนใจ / คติประจำใจ”</p>
+        <p>
+          🌊 • I'm still floating in the middle of the sea. • 🐋 <br>
+          เรื่องวาฬ 52 Hz ที่ร้องเพลงในความถี่ที่วาฬอื่นไม่รับรู้ได้ ทำให้มันร้องอยู่ลำพังกลางทะเล  
+          บางครั้งผมก็รู้สึกว่าเหมือนตัวเอง แต่ก็ยังพยายามใช้ชีวิตต่อไป  
+          <br> หวังว่าคุณจะลองเปิดใจรับฟังเสียงของผมดูนะ
+        </p>
+        <div class="cta" style="margin-top:18px;display:flex;gap:12px;flex-wrap:wrap">
+          <a class="btn" href="#contact">ติดต่อฉัน</a>
+          <a class="btn secondary" href="#about">อ่านประวัติ</a>
+        </div>
+      </div>
+    </div>
+
+    <section id="about" class="grid">
+      <div class="card span-8">
+        <h2>ABOUT ME — ประวัติส่วนตัว</h2>
+        <p><strong>ชื่อ:</strong> ดรัณภพ โลณะปาลวงษ์ (Darunphob Lonapalawong)</p>
+        <p><strong>อายุ:</strong> 22 ปี • <strong>วันเกิด:</strong> 1 กันยายน 2003</p>
+        <p><strong>อาชีพในฝัน:</strong> Game Caster</p>
+        <p style="margin-top:14px">
+          ผมชอบเล่นเกมมาตั้งแต่เด็ก จนวันหนึ่งได้รู้จักกับ Game Caster คนหนึ่ง  
+          เสียงของเขาทำให้ผมหลงใหล และอยากเดินตามรอยเขา
+        </p>
+      </div>
+
+      <div id="interests" class="card span-4">
+        <h2>งานอดิเรก & ความสนใจ</h2>
+        <div class="chips">
+          <span class="chip">เล่นเกม</span><span class="chip">ฟังเพลง</span><span class="chip">ฟุตบอล</span>
+          <span class="chip">บาสเก็ตบอล</span><span class="chip">วาดรูป</span><span class="chip">ร้องเพลง</span>
+        </div>
+      </div>
+    </section>
+
+    <div id="contact" class="contact card" style="margin-top:24px">
+      <div>
+        <h2 style="margin:.2rem 0">ช่องทางการติดต่อ</h2>
+        <p class="handle">rbbitmaster1@gmail.com</p>
+      </div>
+      <a class="btn" href="mailto:rbbitmaster1@gmail.com">ส่งอีเมล</a>
+    </div>
+
+    <footer>© <span id="y1"></span> Portfolio ของดรัณภพ โลณะปาลวงษ์</footer>
+  </div>
+</div>
+
+<hr style="margin:50px 0; border:2px solid rgba(255,255,255,0.2)">
+
+<!-- Portfolio Tor -->
+<div class="portfolio" id="tor">
+  <h1 style="text-align:center;margin:30px 0">Portfolio: ต่อบุญ จำอินทร์ (ต่อ)</h1>
+  <div class="wrap">
+    <header class="hero">
+      <span class="badge" style="background:linear-gradient(90deg, var(--purple), var(--red));padding:6px 14px;border-radius:999px;font-weight:600">Personal Portfolio</span>
+      <div class="hero-inner" style="display:grid;grid-template-columns:120px 1fr;gap:20px;align-items:center;margin-top:18px">
+        <div class="avatar"><img src="me.jpg" alt="รูปโปรไฟล์ ต่อบุญ จำอินทร์" /></div>
+        <div>
+          <h1 class="title">ต่อบุญ จำอินทร์ <span style="opacity:.8;font-weight:600">(SNP)</span></h1>
+          <p class="subtitle">รหัสนักศึกษา: <strong>67319010040</strong> • แผนก: เทคโนโลยีสารสนเทศ • วิทยาลัยเทคนิคลำปาง</p>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="grid">
+        <article class="card span-8">
+          <h2>ประวัติ</h2>
+          <p>ผมชื่อ <strong>ต่อ</strong> เกิดวันที่ 8 พฤศจิกายน 2548 (อายุ 19) ปัจจุบันศึกษาอยู่ที่ <strong>วิทยาลัยเทคนิคลำปาง</strong> สาขาเทคโนโลยีสารสนเทศ ระดับ ปวส.2</p>
+          <p style="margin-top:.6rem;line-height:1.8">
+            ในอนาคต ผมอยากเป็น <strong>Vtuber</strong> และ <strong>Streamer</strong> บน YouTube  
+            เพราะชอบสร้างคอนเทนต์ แบ่งปันพลังบวก ผ่านการเล่นเกม การพูดคุย และการวาดแฟนอาร์ต  
+            สิ่งนี้ทำให้ผมฝึกทักษะการสื่อสาร การตัดต่อ และการออกแบบคอนเทนต์อยู่เสมอ
+          </p>
+        </article>
+
+        <aside class="card span-4">
+          <h2>ข้อมูลสั้น ๆ</h2>
+          <p class="muted">ติดต่อ/ข้อมูลพื้นฐาน</p>
+          <ul style="margin:.4rem 0 0; padding-left:18px; line-height:1.8">
+            <li>ชื่อเล่น: ต่อ</li>
+            <li>ที่อยู่: ลำปาง, ประเทศไทย</li>
+            <li>อีเมล: torboonjumin24387@gmail.com</li>
+          </ul>
+        </aside>
+      </section>
+
+      <section class="grid">
+        <article class="card span-6">
+          <h2>สิ่งที่สนใจ</h2>
+          <div class="chips">
+            <span class="chip">Streamer</span><span class="chip">Game Caster</span>
+            <span class="chip">UI/UX</span><span class="chip">Fitness</span>
+            <span class="chip">Gaming</span><span class="chip">Fan Artist</span>
+            <span class="chip">Vtuber</span>
+          </div>
+        </article>
+
+        <article class="card span-6">
+          <h2>ไอดอลแรงบันดาลใจ</h2>
+          <div class="gallery">
+            <div class="pic"><img src="lungA.png" alt="ลุงเอ"/><div class="caption">Lung-A</div></div>
+          </div>
+        </article>
+      </section>
+
+      <section class="grid">
+        <article class="card span-12">
+          <h2>ข้อความที่อยากบอก</h2>
+          <p style="margin:.4rem 0 0; line-height:1.8">“โค้ดไม่ต้องสวยตั้งแต่แรก แต่ต้องกล้าลงมือทำสม่ำเสมอ เวอร์ชันแรกอาจยังไม่เป๊ะ แต่ทุกคอมมิตคือการพัฒนา”</p>
+        </article>
+      </section>
+    </main>
+
+    <footer>© <span id="y2"></span> ต่อบุญ จำอินทร์ • ทำด้วยใจในธีม <strong>ม่วง–ชมพู</strong></footer>
+  </div>
+</div>
+
+<script>
+  document.getElementById('y1').textContent = new Date().getFullYear();
+  document.getElementById('y2').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
